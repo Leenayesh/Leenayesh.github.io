@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Regressing Gender Parity Index on Urbanisation Rate to find no relationship",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Leenayesh/Leenayesh.github.io/main/ProjectMergedchartdata%20(1).csv",
+    "format": {"type": "csv"}
+  },
+  "background": "#b2d5db",
+  "config": {"axis": {"grid": true, "gridColor": "#FFFFFF"}},
+  "title": {
+    "text": "Relationship between gender equality (GPI) AND Urbanisation",
+    "subtitle": "Data from Sub-Saharan Africa Sources: Statista (2021), World Bank (2020)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "height": 300,
+  "width": 370,
+  "layer": [
+    {
+      "mark": {"type": "point", "size": 30, "color": "#0000FF"},
+      "encoding": {
+        "x": {
+          "field": "Urbanisation Rate",
+          "type": "quantitative",
+          "title": "Urban population (% of total population) (2020)"
+        },
+        "y": {
+          "field": "Gender Parity Index ",
+          "type": "quantitative",
+          "title": "Gender Parity Index (2021)"
+        },
+        "tooltip": [
+          {"field": "Country", "type": "nominal", "title": "Country"},
+          {
+            "field": "Urbanisation Rate",
+            "type": "quantitative",
+            "title": "Urbanisation Rate",
+            "format": ".2f"
+          },
+          {
+            "field": "Gender Parity Index ",
+            "type": "quantitative",
+            "title": "Gender Parity Index"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "Gender Parity Index ",
+          "on": "Urbanisation Rate",
+          "params": true
+        },
+        {"calculate": "'R²= '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "blue",
+        "size": 15,
+        "x": "width",
+        "align": "center",
+        "y": -5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
