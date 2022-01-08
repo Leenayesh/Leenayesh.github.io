@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Regressing educational outcomes on Urbanisation growth rate to find no relationship",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Leenayesh/Leenayesh.github.io/main/Projectchart3Copy.csv",
+    "format": {"type": "csv"}
+  },
+  "background": "#b2d5db",
+  "config": {"axis": {"grid": true, "gridColor": "#FFFFFF"}},
+  "title": {
+    "text": "Relationship between urban population growth and women in secondary education",
+    "subtitle": "Data from Sub-Saharan Africa. Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "height": 300,
+  "width": 370,
+  "layer": [
+    {
+      "mark": {"type": "point", "size": 30, "color": "#0000FF"},
+      "encoding": {
+        "x": {
+          "field": "urban population growth rate",
+          "type": "quantitative",
+          "title": "Urban population growth rate"
+        },
+        "y": {
+          "field": "educational attainment",
+          "type": "quantitative",
+          "title": "Secondary education, pupils (% female)"
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {
+            "field": "urban population growth rate",
+            "type": "quantitative",
+            "title": "Urban Pop Growth Rate",
+            "format": ".2f"
+          },
+          {
+            "field": "educational attainment",
+            "type": "quantitative",
+            "title": "% of pupils that are female"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "educational attainment",
+          "on": "urban population growth rate",
+          "params": true
+        },
+        {"calculate": "'R²= '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "blue",
+        "size": 15,
+        "x": "width",
+        "align": "center",
+        "y": -5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
