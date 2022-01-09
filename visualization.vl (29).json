@@ -1,0 +1,89 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.2.0.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Leenayesh/Leenayesh.github.io/main/Projectplot9.csv"
+  },
+  "width": 450,
+  "height": 300,
+  "title": {
+    "text": "Are domestic violence laws related to urbanisation?",
+    "subtitle": "Higher index means higher discrimination in law. Sources: Oecd Data and World Bank (2019) "
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "color": "turquoise", "tooltip": true},
+      "encoding": {
+        "x": {
+          "field": "Unnamed: 10",
+          "title": "Country",
+          "scale": {
+            "domain": [
+              "Zimbabwe",
+              "Togo",
+              "Somalia",
+              "Eswatini",
+              "Niger",
+              "Sierra Leone",
+              "Mauritania",
+              "Liberia",
+              "Senegal",
+              "Kenya",
+              "Gambia, The",
+              "Rwanda",
+              "Mauritius",
+              "Equatorial Guinea",
+              "Malawi",
+              "Uganda",
+              "Namibia",
+              "Nigeria",
+              "South Africa",
+              "Tanzania",
+              "Zambia",
+              "Angola",
+              "Benin",
+              "Botswana",
+              "Madagascar",
+              "Lesotho",
+              "Ethiopia",
+              "Mozambique",
+              "Burkina Faso",
+              "Burundi",
+              "Cameroon",
+              "Central African Republic",
+              "Guinea-Bissau",
+              "Guinea",
+              "Gabon",
+              "Congo, Dem. Rep.",
+              "Chad",
+              "Cote d'Ivoire",
+              "Congo, Rep."
+            ]
+          }
+        },
+        "y": {
+          "field": "rural population (% of total)",
+          "type": "quantitative",
+          "title": "Rural population (% of total) (bar)",
+          "axis": {"grid": true},
+          "scale": {"domain": [0, 100]}
+        }
+      }
+    },
+    {
+      "mark": {"type": "point", "tooltip": true},
+      "encoding": {
+        "x": {"field": "Unnamed: 10", "title": "Country", "type": "ordinal"},
+        "y": {
+          "field": "Value",
+          "type": "quantitative",
+          "title": "Domestic Violence Laws Index (point)",
+          "axis": {"grid": false},
+          "scale": {"domain": [0, 1]}
+        },
+        "color": {"value": "blue"}
+      }
+    }
+  ],
+  "resolve": {"scale": {"y": "independent"}},
+  "config": {}
+}
