@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Regressing women in politics on Urbanisation to find relationship",
+  "data": {
+    "url": "https://raw.githubusercontent.com/Leenayesh/Leenayesh.github.io/main/projectchart8regression1.csv",
+    "format": {"type": "csv"}
+  },
+  "background": "#b2d5db",
+  "config": {"axis": {"grid": true, "gridColor": "#FFFFFF"}},
+  "title": {
+    "text": "Relationship between urban population and women in politics",
+    "subtitle": "Data from Sub-Saharan Africa. Source: World Bank",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start"
+  },
+  "height": 300,
+  "width": 370,
+  "layer": [
+    {
+      "mark": {"type": "point", "size": 30, "color": "#0000FF"},
+      "encoding": {
+        "x": {
+          "field": "Urban Population (% of total population)",
+          "type": "quantitative",
+          "title": "Urban Population(% of total population)"
+        },
+        "y": {
+          "field": "% of Women parliamentarians",
+          "type": "quantitative",
+          "title": "% of Women parliamentarians"
+        },
+        "tooltip": [
+          {"field": "country", "type": "nominal", "title": "Country"},
+          {
+            "field": "Urban Population (% of total population)",
+            "type": "quantitative",
+            "title": "Urban population (% of total population)",
+            "format": ".2f"
+          },
+          {
+            "field": "% of Women parliamentarians",
+            "type": "quantitative",
+            "title": "% of women parliamentarians"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "#7F00FF", "size": 3},
+      "transform": [
+        {
+          "regression": "% of Women parliamentarians",
+          "on": "Urban Population (% of total population)"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Urban Population (% of total population)",
+          "type": "quantitative"
+        },
+        "y": {"field": "% of Women parliamentarians", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "% of Women parliamentarians",
+          "on": "Urban Population (% of total population)",
+          "params": true
+        },
+        {"calculate": "'R²= '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "blue",
+        "size": 15,
+        "x": "width",
+        "align": "center",
+        "y": -5
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
