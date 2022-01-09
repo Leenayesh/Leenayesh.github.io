@@ -1,0 +1,40 @@
+,countryiso3code,INDICATOR,SUBJECT,MEASURE,FREQUENCY,TIME,Value,Flag Codes,Unnamed: 0,Unnamed: 2,rural population (% of total),Unnamed: 4,Unnamed: 5,Unnamed: 6,Unnamed: 7,Unnamed: 8,Unnamed: 9,Unnamed: 10
+0,ETH,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,801,2019,78.775,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),ET,Ethiopia
+1,MOZ,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1451,2019,63.472,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),MZ,Mozambique
+2,NGA,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1601,2019,48.843,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),NG,Nigeria
+3,ZAF,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1951,2019,33.144,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),ZA,South Africa
+4,TZA,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,2051,2019,65.5,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),TZ,Tanzania
+5,ZMB,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,2201,2019,55.928000000000004,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),ZM,Zambia
+6,AGO,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1,2019,33.823,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),AO,Angola
+7,BEN,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,51,2019,52.138999999999996,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),BJ,Benin
+8,BWA,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,101,2019,29.828000000000003,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),BW,Botswana
+9,BFA,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,151,2019,70.02,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),BF,Burkina Faso
+10,BDI,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,201,2019,86.634,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),BI,Burundi
+11,CMR,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,301,2019,43.032,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),CM,Cameroon
+12,CAF,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.25,,351,2019,58.23,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),CF,Central African Republic
+13,TCD,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,401,2019,76.721,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),TD,Chad
+14,COG,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,501,2019,32.626999999999995,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),CG,"Congo, Rep."
+15,CIV,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,601,2019,48.761,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),CI,Cote d'Ivoire
+16,COD,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,551,2019,54.95399999999999,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),CD,"Congo, Dem. Rep."
+17,GNQ,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,1.0,,651,2019,27.373,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),GQ,Equatorial Guinea
+19,GAB,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,851,2019,10.259,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),GA,Gabon
+20,GMB,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,901,2019,38.069,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),GM,"Gambia, The"
+21,GIN,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,951,2019,63.5,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),GN,Guinea
+22,GNB,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1001,2019,56.223,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),GW,Guinea-Bissau
+23,KEN,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1051,2019,72.493,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),KE,Kenya
+24,LSO,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1101,2019,71.415,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),LS,Lesotho
+25,LBR,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1151,2019,48.385,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),LR,Liberia
+26,MDG,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1201,2019,62.138999999999996,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),MG,Madagascar
+27,MWI,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1251,2019,82.82600000000001,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),MW,Malawi
+28,MRT,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1351,2019,45.493,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),MR,Mauritania
+29,MUS,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1401,2019,59.233999999999995,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),MU,Mauritius
+30,NAM,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.25,,1501,2019,48.958,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),,Namibia
+31,NER,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,1551,2019,83.48299999999999,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),NE,Niger
+32,RWA,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1651,2019,82.68700000000001,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),RW,Rwanda
+33,SEN,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1751,2019,52.347,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),SN,Senegal
+34,SLE,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1851,2019,57.516000000000005,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),SL,Sierra Leone
+35,SOM,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,1901,2019,54.446000000000005,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),SO,Somalia
+36,SWZ,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,751,2019,76.01899999999999,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),SZ,Eswatini
+37,TGO,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,2101,2019,57.751999999999995,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),TG,Togo
+38,UGA,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.75,,2151,2019,75.639,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),UG,Uganda
+39,ZWE,VIOLWOMEN,LAWDOMVIOL,IDX,A,2019,0.5,,2251,2019,67.79,,,0,SP.RUR.TOTL.ZS,Rural population (% of total population),ZW,Zimbabwe
