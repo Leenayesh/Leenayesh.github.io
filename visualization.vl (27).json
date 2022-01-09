@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Gender Parity Index in Subsaharan Africa (2021)",
+  "title": {
+    "text": "Gender Parity Index in Sub-Saharan Africa (2021)",
+    "subtitle": "The southern region boasts greater gender equality. Source: Statista",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "black"
+  },
+  "width": 300,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/Leenayesh/Leenayesh.github.io/main/Projectchart4topojson_export.json",
+    "format": {"type": "topojson", "feature": "continent_Africa_subunits"}
+  },
+  "projection": {"type": "naturalEarth1"},
+  "mark": {"type": "geoshape", "tooltip": "true"},
+  "encoding": {
+    "color": {
+      "field": "properties.epi",
+      "type": "quantitative",
+      "title": "Index",
+      "legend": {"title": "Index"}
+    },
+    "tooltip": [
+      {"field": "properties.geounit", "title": "Country"},
+      {"field": "properties.epi", "title": "Index"}
+    ]
+  },
+  "config": {}
+}
