@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Regressing domestic violence laws on Urbanisation to find relationship",
   "data": {
-    "url": "https://raw.githubusercontent.com/Leenayesh/Leenayesh.github.io/main/ProjectChart9and10.csv",
+    "url": "https://raw.githubusercontent.com/Leenayesh/Leenayesh.github.io/main/ProjectChart10.csv",
     "format": {"type": "csv"}
   },
   "background": "#b2d5db",
