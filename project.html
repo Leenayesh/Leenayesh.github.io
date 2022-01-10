@@ -91,8 +91,10 @@ One interesting thing to note is the lack of data on Sub Saharan countries, even
         vegaEmbed('#thirdChart', myChart3);
       </script>
   </div>
-      
-      
+ 
+      <p> I wanted to compare Sub-Saharan Africa to other regions and show that it is indeed one of the fastest urbanising regions in the world. Therefore, I used Python in this <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Chart2Project.ipynb  
+
+">workbook</a> to batch download data for several regions and compare them to Sub Saharan Africa. Interestingly, we notice that the MENA region is also among the faster urbanising regions out of the four.  </p>     
 
 <!--Vega embed, with notes for what is going on -->
   <div class="chart" id="fourthChart">
@@ -102,15 +104,21 @@ One interesting thing to note is the lack of data on Sub Saharan countries, even
       </script>
   </div>
       
- 
+      
+      <p> I found recent GPI data on Statista for Sub Saharan African countries. It was a straightforward CSV download. I then used this 
+       <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/ProjectChart3.ipynb ">workbook</a> 
+       to match the names of the countries on the map to the names of the countries in my dataset so that I create a TopoJson. 
+       Data cleaning here only included checking for country names that didn’t match and changing that on Excel. </p>
+      
   <div class="chart" id="fifthChart">
       <script>
         var myChart5 = "Projectchart4map.json";
         vegaEmbed('#fifthChart', myChart5);
       </script>
   </div>
- 
-  <div class="chart" id="sixthChart">
+   
+     
+      <div class="chart" id="sixthChart">
       <script>
         var myChart6 = "Projectchart5regression.json";
         vegaEmbed('#sixthChart', myChart6);
