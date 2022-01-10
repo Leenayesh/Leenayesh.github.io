@@ -65,6 +65,8 @@
   
 <p>I chose Sub-Saharan Africa because it is among the fastest urbanising regions in the world. The chart below, which I created using the World Bank API, after converting it from XML to JSON format, shows the constant and persistent growth of the urban population in Sub-Saharan Africa.</p>  
 
+  <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Projectchart1.json "> here</a>.</p>
+
    <!--This chart is built using the World Bank API that I built by converting it from XML format to JSON format. It is also interactive and has a tooltip -->
   <div class="chart" id="firstChart">
       <script>
@@ -77,14 +79,18 @@
 One interesting thing to note is the lack of data on Sub Saharan countries, even on the World Bank website, and so I ended up with charts like the one below, which starts from 1991 and ends in 2019, as opposed to from 1970 and ending in 2020. For this chart and the previous one, I faced issues using the API directly because the missing data would be read as a “0”, which is incorrect. Therefore, I loaded the APIs in this <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Chart1Extensions.ipynb  
 
 ">workbook</a> to create a DataFrame and dropped all missing values.  </p>
-      
+    
+      <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/ProjectChart1Extension1.json "> here</a>.</p>
+     
    <div class="chart" id="secondChart">
       <script>
         var myChart2 = "ProjectChart1Extension1.json";
         vegaEmbed('#secondChart', myChart2);
       </script>
   </div>
-  
+    
+        <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/ProjectChart1Extension2.json "> here</a>.</p>
+
      <div class="chart" id="thirdChart">
       <script>
         var myChart3 = "ProjectChart1Extension2.json";
@@ -95,7 +101,8 @@ One interesting thing to note is the lack of data on Sub Saharan countries, even
       <p> I wanted to compare Sub-Saharan Africa to other regions and show that it is indeed one of the fastest urbanising regions in the world. Therefore, I used Python in this <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Chart2Project.ipynb  
 
 ">workbook</a> to batch download data for several regions and compare them to Sub Saharan Africa. Interestingly, we notice that the MENA region is also among the faster urbanising regions out of the four.  </p>     
-
+  
+      <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/ProjectChart2.json "> here</a>.</p>
 <!--Vega embed, with notes for what is going on -->
   <div class="chart" id="fourthChart">
       <script>
@@ -110,6 +117,8 @@ One interesting thing to note is the lack of data on Sub Saharan countries, even
        to match the names of the countries on the map to the names of the countries in my dataset so that I create a TopoJson. 
        Data cleaning here only included checking for country names that didn’t match and changing that on Excel. </p>
       
+      <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Projectchart4map.json "> here</a>.</p>
+      
   <div class="chart" id="fifthChart">
       <script>
         var myChart5 = "Projectchart4map.json";
@@ -120,36 +129,43 @@ One interesting thing to note is the lack of data on Sub Saharan countries, even
       <p> When I regressed GPI on urban population percentages in the country dataset, I found no relationship at all between the two variables, as the R squared came back as 0. I downloaded the Urban Population percentages on this <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Projectchart5downloaddataset.ipynb 
 
 ">workbook</a>, sorted the values in excel by date and kept 2020 values, and then uploaded the csv folder to this <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Projectchart5regression.ipynb "> workbook </a>, merged it with the Statista data and performed the regression analysis.   </p>
-     
+          
+      <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Projectchart5regression.json "> here</a>.</p>
       <div class="chart" id="sixthChart">
       <script>
         var myChart6 = "Projectchart5regression.json";
         vegaEmbed('#sixthChart', myChart6);
       </script>
   </div>
+      
       <p>This map was created in this <a href="https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Chart6and7mapandregressiondata.ipynb "> workbook </a>. I downloaded the data from OECD and it included countries from all over the world, however, it only included the country’s iso3codes as opposed to their full names. I found a way around this by uploading the World Bank Urban Population dataset from 2019 for the Sub Saharan countries, as it includes the country’s iso3codes. I merged them together, effectively getting rid of all countries that are not in SubSaharan Africa according to the World Bank Grouping. I created my map and performed my regression analysis in the same workbook. Once again, there is no relationship between having a higher percentage of women politicians and living in a highly urbanised country.  </p>
- 
+      <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Projectchart7updatedmap.json "> here</a>.</p>
       <div class="chart" id="seventhChart">
       <script>
         var myChart7 = "Projectchart7updatedmap.json";
         vegaEmbed('#seventhChart', myChart7);
       </script>
   </div>
-      
+    
+  <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/ProjectChart8regression.json "> here</a>.</p>
   <div class="chart" id="eighthChart">
     <script> 
       var myChart8 = "ProjectChart8regression.json";
           vegaEmbed('#eighthChart', myChart8);
     </script>
   </div>
-      <p> In these charts, I faced the same problem as the above charts, and so I solved it the same way. I also dropped variables that showed “NAN” as this would invalidate my regression analysis. Find the workbook <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Copy_of_ProjectChart9and10plotandregression.ipynb">here</a>.   </p>
-  <div class="chart" id="ninthChart">
+      
+      
+  <p> In these charts, I faced the same problem as the above charts, and so I solved it the same way. I also dropped variables that showed “NAN” as this would invalidate my regression analysis. Find the workbook <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Copy_of_ProjectChart9and10plotandregression.ipynb">here</a>.   </p>
+      <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/ProjectChart9.json "> here</a>.</p>
+      <div class="chart" id="ninthChart">
     <script> 
       var myChart9 = "ProjectChart9.json";
           vegaEmbed('#ninthChart', myChart9);
     </script>
   </div>
-
+      
+  <p> Find the JSON <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/ProjectChart10.json "> here</a>.</p>
  <div class="chart" id="tenthChart">
     <script> 
       var myChart10 = "ProjectChart10.json";
