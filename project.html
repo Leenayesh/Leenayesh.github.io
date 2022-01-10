@@ -63,16 +63,20 @@
  <p> A few months ago, The Economist published <a href=" https://www.economist.com/international/2021/09/11/societies-that-treat-women-badly-are-poorer-and-less-stable">evidence</a> that societies that treated women badly are also poorer and less stable. The article mentions that urbanisation is a driving factor in countering this, as “when women move to cities, they earn higher wages and increase their clout at home. Their clan ties tend to loosen, too, since they live surrounded by non-members.” This bold statement made me interested in measuring the relationship between higher rates of urbanisation and women’s rights, particularly in developing countries as they tend to have higher rates of gender disparity.</p> 
   <hr size="5" color="#AC35F0" width="400" alligh="center">
   
-  
-<p class=sub><b><span style="color:rgb(51, 116, 255)"></span>Subsaharan Africa: <span style="color:rgb(64, 224, 208)"> Let's talk about urbanisation in one of the fastest urbanising region in the world</span></b></p>
+<p>I chose Sub-Saharan Africa because it is among the fastest urbanising regions in the world. The chart below, which I created using the World Bank API, after converting it from XML to JSON format, shows the constant and persistent growth of the urban population in Sub-Saharan Africa.</p>  
 
-<!--This chart is built using the World Bank API that I built by converting it from XML format to JSON format. It is also interactive and has a tooltip -->
+   <!--This chart is built using the World Bank API that I built by converting it from XML format to JSON format. It is also interactive and has a tooltip -->
   <div class="chart" id="firstChart">
       <script>
         var myChart1 = "Projectchart1.json";
         vegaEmbed('#firstChart', myChart1);
       </script>
   </div>
+      <p> While we also notice an upwards trend (though not as sharp) in the percentage of women that make it to age 65, the trend in the numbers of women who are also employers is not so clear cut, and so it is safe to say that we should not go into this topic expecting that the outcomes for women in all possible areas are necessarily improving.  
+
+One interesting thing to note is the lack of data on Sub Saharan countries, even on the World Bank website, and so I ended up with charts like the one below, which starts from 1991 and ends in 2019, as opposed to from 1970 and ending in 2020. For this chart and the previous one, I faced issues using the API directly because the missing data would be read as a “0”, which is incorrect. Therefore, I loaded the APIs in this <a href=" https://github.com/Leenayesh/Leenayesh.github.io/blob/main/Chart1Extensions.ipynb  
+
+">workbook</a> to create a DataFrame and dropped all missing values.  </p>
       
    <div class="chart" id="secondChart">
       <script>
